@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "DCO GitHub UI",
+    "version": "0.1.0",
+    "description": "DCO signoff for GitHub UI",
+    "options_ui": {
+        "page": "options.html",
+        "open_in_tab": false
+    },
+    "permissions": [
+        "storage"
+    ],
+    "icons": {
+        "16": "icons/dco-gh-ui-16.png",
+        "32": "icons/dco-gh-ui-32.png",
+        "48": "icons/dco-gh-ui-48.png",
+        "128": "icons/dco-gh-ui-128.png"
+    },
+    "content_scripts": [
+        {
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "matches": [
+                "https://github.com/*"
+            ]
+        }
+    ]
+}
