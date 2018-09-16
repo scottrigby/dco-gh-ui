@@ -2,7 +2,7 @@
 
 This Chrome extension adds DCO Signed-off-by line to commits made with the GitHub browser UI.
 
-For command line git, see [this gist](https://gist.github.com/scottrigby/0c043c0bfbbdb5949e2d824fc3adeaa4).
+For CLI git, see [this gist](https://gist.github.com/scottrigby/0c043c0bfbbdb5949e2d824fc3adeaa4).
 
 ## Configure
 
@@ -26,6 +26,9 @@ See `git help commit`:
 
 ## Chrome extension packaging
 
+To keep the package as small as possible, exclude files that may be valuable for this repo, but unnecessary for the Chrome extension.
+
 ```sh
-zip -r dco-gh-ui.zip dco-gh-ui -x \*.git\* \*images/icon.\* \*images/screenshot\* \*README\*
+zip -r ../${TAG}-package.zip . -x \*.git\* \*images/icon.\* \*images/screenshot\* \*README\*
+hub release create $TAG -a "../${TAG}-package#Extension package"
 ```
