@@ -6,7 +6,15 @@ For command line git, see [this gist](https://gist.github.com/scottrigby/0c043c0
 
 ## Configure
 
-Add your full DCO signoff line in the extension options.
+Add your full DCO signoff line in the extension options:
+
+![options screenshot](images/screenshot-options.png)
+
+Your signoff should now prepopulate in the GitHub UI commit optional extended description textarea:
+
+![web screenshot](images/screenshot-web.png)
+
+## What is DCO?
 
 See `git help commit`:
 
@@ -16,8 +24,8 @@ See `git help commit`:
     the rights to submit this work under the same license and agrees to a Developer Certificate of Origin (see http://developercertificate.org/ for more information).
 ```
 
-## Contribute
+## Chrome extension packaging
 
 ```sh
-zip -r dco-gh-ui.zip dco-gh-ui -x \*.git\* \*icons/icon.\* \*README\*
+zip -r dco-gh-ui.zip dco-gh-ui -x \*.git\* \*images/icon.\* \*images/screenshot\* \*README\*
 ```
