@@ -8,12 +8,13 @@ This browser extension adds DCO Signed-off-by line to commits made with the GitH
 
 In the Chrome web store [search for "dco"](https://chrome.google.com/webstore/search/dco), or go to [the extension page](https://chrome.google.com/webstore/detail/dco-github-ui/onhgmjhnaeipfgacbglaphlmllkpoijo), and click "Add to Chrome":
 
-![options screenshot](images/screenshot-webstore.png)
+![Chrome webstore screenshot](images/screenshot-chrome-webstore.png)
 
 ### Firefox
 
-To run in Firefox you will need to load the extension manually. The reason is that this relies on content scripts. According to [MDN web docs](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts):
-> Note that content scripts are currently blocked on addons.mozilla.org and testpilot.firefox.com. If you try to inject a content script into a page in these domains, it will fail and the page will log a CSP error.
+In Firefox Add-ons, [search for "dco"](https://addons.mozilla.org/en-US/firefox/search/?q=dco), or go to [the extension page](https://addons.mozilla.org/en-US/firefox/addon/scott-rigby/), and click "+ Add to Firefox":
+
+![Firefox add-ons screenshot](images/screenshot-firefox-addons.png)
 
 ## Configure
 
