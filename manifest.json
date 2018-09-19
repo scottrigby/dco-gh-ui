@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "DCO GitHub UI",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "description": "DCO signoff for GitHub UI",
     "options_ui": {
         "page": "options.html",
@@ -14,6 +14,7 @@
         "16": "images/dco-gh-ui-16.png",
         "32": "images/dco-gh-ui-32.png",
         "48": "images/dco-gh-ui-48.png",
+        "96": "images/dco-gh-ui-96.png",
         "128": "images/dco-gh-ui-128.png"
     },
     "content_scripts": [

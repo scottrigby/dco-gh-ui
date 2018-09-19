@@ -1,12 +1,20 @@
 # DCO GitHub UI
 
-This Chrome extension adds DCO Signed-off-by line to commits made with the GitHub browser UI.
+This browser extension adds DCO Signed-off-by line to commits made with the GitHub browser UI.
 
 ## Install
 
+### Chrome
+
 In the Chrome web store [search for "dco"](https://chrome.google.com/webstore/search/dco), or go to [the extension page](https://chrome.google.com/webstore/detail/dco-github-ui/onhgmjhnaeipfgacbglaphlmllkpoijo), and click "Add to Chrome":
 
-![options screenshot](images/screenshot-webstore.png)
+![Chrome webstore screenshot](images/screenshot-chrome-webstore.png)
+
+### Firefox
+
+In Firefox Add-ons, [search for "dco"](https://addons.mozilla.org/en-US/firefox/search/?q=dco), or go to [the extension page](https://addons.mozilla.org/en-US/firefox/addon/scott-rigby/), and click "+ Add to Firefox":
+
+![Firefox add-ons screenshot](images/screenshot-firefox-addons.png)
 
 ## Configure
 
