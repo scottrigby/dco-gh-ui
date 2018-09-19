@@ -1,7 +1,7 @@
 // Saves options to chrome.storage
 function save_options() {
     var signoff = document.getElementById('signoff').value;
-    chrome.storage.sync.set({
+    chrome.storage.local.set({
         signoff: signoff
     }, function () {
         // Update status to let user know options were saved.
@@ -16,7 +16,7 @@ function save_options() {
 // Restores select box and checkbox state using the preferences
 // stored in chrome.storage.
 function restore_options() {
-    chrome.storage.sync.get({
+    chrome.storage.local.get({
         signoff: ''
     }, function (items) {
         document.getElementById('signoff').value = items.signoff;
