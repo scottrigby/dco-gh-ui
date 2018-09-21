@@ -2,17 +2,19 @@
 <html>
 
 <head>
-    <title>DCO GitHub UI Options</title>
+    <meta charset="utf-8" />
 </head>
 
 <body>
+    <form>
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Your full name" />
+        <label>Email</label>
+        <input type="text" id="email" placeholder="Your email" />
 
-    <label for="signoff">Signoff:</label>
-    <input type="text" id="signoff" name="signoff" placeholder="DCO signoff string" style="width: 95%" />
-
-    <div id="status"></div>
-    <button id="save">Save</button>
-
+        <div id="status"></div>
+        <button id="save">Save</button>
+    </form>
     <script src="options.js"></script>
 </body>
 

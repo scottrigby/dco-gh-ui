@@ -1,8 +1,10 @@
 // Saves options to chrome.storage
 function save_options() {
-    var signoff = document.getElementById('signoff').value;
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
     chrome.storage.local.set({
-        signoff: signoff
+        name: name,
+        email: email
     }, function () {
         // Update status to let user know options were saved.
         var status = document.getElementById('status');
@@ -17,9 +19,11 @@ function save_options() {
 // stored in chrome.storage.
 function restore_options() {
     chrome.storage.local.get({
-        signoff: ''
+        name: '',
+        email: ''
     }, function (items) {
-        document.getElementById('signoff').value = items.signoff;
+        document.getElementById('name').value = items.name;
+        document.getElementById('email').value = items.email;
     });
 }
 document.addEventListener('DOMContentLoaded', restore_options);
