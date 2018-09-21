@@ -4,7 +4,11 @@
 // needs to do that, you need content scripts.
 // See https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts
 chrome.storage.local.get({
-    signoff: ''
+    name: '',
+    email: ''
 }, function (items) {
-    document.getElementById('commit-description-textarea').value = items.signoff;
+    if (items.name && items.email) {
+        var signoff = "Signed-off-by: " + items.name + " <" + items.email + ">"
+        document.getElementById('commit-description-textarea').value = signoff;
+    }
 });
