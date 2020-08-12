@@ -10,5 +10,8 @@ chrome.storage.local.get({
     if (items.name && items.email) {
         var signoff = "Signed-off-by: " + items.name + " <" + items.email + ">"
         document.getElementById('commit-description-textarea').value = signoff;
+        // Suggested changes commit message
+        // ref: https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request
+        document.getElementsByName('commit_message').forEach(function(v,i,o){o[i].value = this}, signoff);
     }
 });
