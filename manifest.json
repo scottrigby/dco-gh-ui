@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "DCO GitHub UI",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "DCO signoff for GitHub UI",
     "options_ui": {
         "page": "options.html",
