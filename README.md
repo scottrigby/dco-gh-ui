@@ -1,5 +1,7 @@
 # DCO GitHub UI
 
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 This browser extension adds DCO Signed-off-by line to commits made with the GitHub browser UI.
 
 ## Install
@@ -42,3 +44,9 @@ See `git help commit`:
 ## Related
 
 For CLI git, see [this gist](https://gist.github.com/scottrigby/0c043c0bfbbdb5949e2d824fc3adeaa4).
+
+## Contributing
+
+- Participation is governed by a [Contributor Covenant Code of Conduct](./CODE_OF_CONDUCT.md)
+- Ensure pull request commits contain [DCO signoff](#what-is-dco)
+- Thank you!
