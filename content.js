@@ -12,10 +12,16 @@ chrome.storage.local.get({
         // Standard commit message
         cdt = document.getElementById('commit-description-textarea')
         if (cdt) {
-            cdt.value = signoff;
+            // Add a newline separator only if text already exists
+            sep = cdt.value == '' ? '' : "\n\n"
+            // Append
+            cdt.value += sep + signoff;
         }
         // Suggested changes commit message
         // ref: https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request
-        document.getElementsByName('commit_message').forEach(function(v,i,o){o[i].value = this}, signoff);
+        document.getElementsByName('commit_message').forEach(function(v,i,o){
+            sep = o[i].value == '' ? '' : "\n\n"
+            o[i].value += sep + this
+        }, signoff);
     }
 });
