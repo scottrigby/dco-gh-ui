@@ -9,19 +9,25 @@ chrome.storage.local.get({
 }, function (items) {
     if (items.name && items.email) {
         var signoff = "Signed-off-by: " + items.name + " <" + items.email + ">"
+        function appendSignoff(e) {
+            if (e.value !== '') {
+                // Don't append if the last line is already the same signoff
+                s = e.value.split('\n')
+                lastLine = s[s.length-1]
+                if (lastLine !== signoff) {
+                    e.value += '\n\n' + signoff
+                }
+            } else {
+                e.value = signoff
+            }
+        }
         // Standard commit message
         cdt = document.getElementById('commit-description-textarea')
         if (cdt) {
-            // Add a newline separator only if text already exists
-            sep = cdt.value == '' ? '' : "\n\n"
-            // Append
-            cdt.value += sep + signoff;
+            appendSignoff(cdt)
         }
         // Suggested changes commit message
         // ref: https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request
-        document.getElementsByName('commit_message').forEach(function(v,i,o){
-            sep = o[i].value == '' ? '' : "\n\n"
-            o[i].value += sep + this
-        }, signoff);
+        document.getElementsByName('commit_message').forEach(appendSignoff);
     }
 });
