@@ -4,6 +4,11 @@
 
 This browser extension adds DCO Signed-off-by line to commits made with the GitHub browser UI.
 
+## 📣 👀 🚧 This DCO feature is currently in private beta for native GitHub UI!
+
+Follow and contribute to this issue for updates https://github.com/todogroup/gh-issues/issues/50
+Once this feature is GA natively in GitHub UI, this extension will be deprecated and this repo will be archived 🤞🙂
+
 ## Install
 
 ### Chrome
