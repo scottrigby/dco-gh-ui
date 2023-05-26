@@ -31,7 +31,7 @@ Add your full DCO signoff line in the extension options:
 
 ![options screenshot](images/screenshot-options.png)
 
-Your signoff should now prepopulate in the GitHub UI commit optional extended description textarea:
+Your signoff should now prepopulate in the optional extended description text area within the "Commit changes" box in the GitHub UI:
 
 ![web screenshot](images/screenshot-web.png)
 
