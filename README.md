@@ -1,3 +1,8 @@
+# ⚠️ Repo Archive Notice
+
+As of Jun 8, 2022, DCO (signed-off-by) in commits via web ui is now GA in GitHub.
+For more information, see https://github.com/todogroup/gh-issues/issues/50#issuecomment-1148657762 and https://github.blog/changelog/2022-06-08-admins-can-require-sign-off-on-web-based-commits/
+
 # DCO GitHub UI
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
